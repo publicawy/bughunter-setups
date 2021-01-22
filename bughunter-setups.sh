@@ -1,4 +1,12 @@
 
+# colors 
+RED="\033[0;31m"
+BLUE="\033[0;34m"
+YELLOW="\033[1;33m"
+GREEN="\033[0;32m"
+RESET="\033[0m"
+NOTIC="\e[5m"
+NOTIC_RESET="\e[25m"
 
 # install basics to linux
 basicInstall() {
