@@ -31,6 +31,7 @@ basicInstall() {
 	sudo apt install snap
 	sudo apt install whois
 	sudo apt install snapd
+	sudo apt install screen
 
 	echo -e "[$GREEN+$RESET] Creating directories.."
 	mkdir -p "$HOME"/bughunter
@@ -669,3 +670,8 @@ additionalTools() {
 		wget https://raw.githubusercontent.com/janmasarik/resolvers/master/resolvers.txt -O "$HOME"/bughunter/wordlists/resolvers.txt
 	fi
 }
+
+basicInstall
+golangInstall
+golangTools
+additionalTools
