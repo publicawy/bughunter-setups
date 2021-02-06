@@ -101,7 +101,7 @@ golangTools() {
 	if ! command -v subfinder &> /dev/null
 	then
 		echo -e "[$YELLOW$NOTIC+$RESET$NOTIC_RESET] Installing subfinder.."
-		GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+		sudo GO111MODULE=on go get -u -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
 		echo -e "[$GREEN+$RESET] Done."
 	else
 		echo -e "[$GREEN+$RESET] Subfinder already installed."
@@ -329,7 +329,7 @@ golangTools() {
 	if ! command -v nuclei &> /dev/null
 	then
 		echo -e "[$YELLOW$NOTIC+$RESET$NOTIC_RESET] Installing nuclei.."
-		GO111MODULE=on go get -u -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
+		sudo GO111MODULE=on go get -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei
 		echo -e "[$GREEN+$RESET] Done."
 	else
 		echo -e "[$GREEN+$RESET] nuclei already installed."
